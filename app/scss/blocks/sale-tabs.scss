@@ -1,0 +1,89 @@
+.sale {
+  height: 506px;
+
+  @include media-breakpoint-up("s") {
+    height: 546px;
+  }
+}
+.sale-tabs {
+  position: relative;
+
+  // .sale-tabs__switchers
+
+  &__switchers {
+    display: flex;
+    column-gap: 8px;
+
+    @include media-breakpoint-up("s") {
+      flex-wrap: wrap;
+      max-width: 70%;
+      row-gap: 8px;
+    }
+  }
+
+  // .sale-tabs__btn
+
+  &__btn {
+    padding: 13px 30px;
+    background: #f0f0f0;
+    border-radius: 21px;
+    font-size: 14px;
+    line-height: 100%;
+    color: $basic-color;
+    border: none;
+    transition: 0.2s linear;
+
+    &._active {
+      color: #ffffff;
+      background: $basic-color;
+    }
+  }
+
+  // .sale-tabs__content
+
+  &__content {
+    position: absolute;
+    top: 76px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s linear;
+
+    @include media-breakpoint-up("s") {
+      top: 100px;
+    }
+
+    &._active {
+      opacity: 1;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    column-gap: 8px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+}
+
+.sale-slider {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.product-slider {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}

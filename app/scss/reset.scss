@@ -4,6 +4,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: $basic-family;
+  color: $basic-color;
   margin: 0;
 }
 * {
@@ -186,7 +188,7 @@ a {
 
 .container {
   box-sizing: content-box;
-  max-width: 1320px;
+  max-width: 1300px;
   padding: 0 60px;
   margin: 0 auto;
 
@@ -196,5 +198,25 @@ a {
 
   @include media-breakpoint-up("s") {
     padding: 0 15px;
+  }
+}
+
+.section {
+  margin-bottom: 60px;
+
+  @include media-breakpoint-up("md") {
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up("s") {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-family: $prata;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
   }
 }

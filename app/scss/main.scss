@@ -3,8 +3,17 @@
 @import "reset"; //сборс стилей
 @import "fonts"; //подключаем шрифты (локально)
 
-@import "blocks/header";
-
 //подключаем БЭМ блоки
+@import "blocks/header";
+@import "blocks/location_block";
+@import "blocks/sliders";
+@import "blocks/banner";
+@import "blocks/sale-tabs";
+@import "blocks/product-sliders";
+@import "blocks/todays-product";
+@import "blocks/rating";
+@import "blocks/timer";
+@import "blocks/colors";
+@import "blocks/size";
 
 @import "blocks/footer";

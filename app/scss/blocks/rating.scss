@@ -1,0 +1,39 @@
+.rating {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 24px;
+  // .rating__group
+
+  &__group {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+
+  // .rating__star
+
+  &__star {
+    width: 17px;
+    height: 17px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../img/icons/Star.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background 0.2s linear;
+
+    &._checked {
+      background-image: url("../img/icons/Star-checked.svg");
+    }
+  }
+
+  // .rating__value
+
+  &__value {
+    font-size: 14px;
+    line-height: 100%;
+  }
+}

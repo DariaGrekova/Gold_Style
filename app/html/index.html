@@ -4,24 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Каталог</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!-- подключаем шапку -->
-  @@include('blocks/header.html')
+  <div class="container">
+    @@include('blocks/header.html')
 
+    <!-- include content -->
+    <main class="main-page">
+      @@include('blocks/banner.html')
+      @@include('blocks/sale-tabs.html')
+      @@include('blocks/todays-product.html')
 
+    </main>
 
-  <!-- подключаем подвал -->
-  @@include('blocks/footer.html')
+    @@include('blocks/footer.html')
+
+  </div>
 
   <!-- подключаем js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
 </html>
-  <svg>
-    <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
-  </svg>

@@ -1,4 +1,17 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: url("../fonts/Inter/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Prata";
+  font-weight: 400;
+  src: url("../fonts/Prata/Prata-Regular.ttf") format("truetype");
 }

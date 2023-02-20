@@ -1,0 +1,285 @@
+.todays-product {
+  position: relative;
+  // .todays-product__controls
+
+  &__controls {
+    position: absolute;
+    display: flex;
+    column-gap: 8px;
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+
+  // .todays-product__button-prev
+
+  &__button-prev {
+  }
+
+  // .todays-product__button-next
+
+  &__button-next {
+  }
+}
+.section {
+  // .section__title
+
+  &__title {
+    @include media-breakpoint-up("md") {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.button-prev {
+}
+.button-next {
+}
+.card-slider {
+  width: 100%;
+  // height: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include media-breakpoint-up("xl") {
+    grid-template-columns: repeat(2, 48%);
+  }
+
+  @include media-breakpoint-up("md") {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+  }
+
+  &__title {
+    font-family: $prata;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up("md") {
+      font-size: 24px;
+    }
+  }
+  // .product-card__images
+
+  &__images {
+  }
+
+  // .product-card__content
+
+  &__content {
+  }
+
+  // .product-card__content--top
+
+  &__content--top {
+    border-bottom: 1px solid #8f8f8f;
+    padding-bottom: 20px;
+  }
+
+  // .product-card__articul
+
+  &__articul {
+    margin-bottom: 2px;
+
+    @include media-breakpoint-up("xl") {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .product-card__price
+
+  &__price {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+
+    @include media-breakpoint-up("xl") {
+      flex-wrap: wrap;
+      row-gap: 15px;
+    }
+  }
+
+  // .product-card__content--bottom
+
+  &__content--bottom {
+    padding-top: 30px;
+  }
+
+  // .product-card__buttons
+
+  &__buttons {
+    display: flex;
+    column-gap: 16px;
+
+    @include media-breakpoint-up("md") {
+      flex-direction: column-reverse;
+      row-gap: 15px;
+    }
+  }
+}
+.product-slide {
+  position: relative;
+  // .product-slide__pictos
+
+  &__pictos {
+    position: absolute;
+    z-index: 2;
+  }
+}
+.new-picto {
+}
+.hit-picto {
+}
+.sale-picto {
+}
+.priduct-view-slider {
+  width: 550px;
+  height: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+
+  @include media-breakpoint-up("xl") {
+    width: 100%;
+    height: 420px;
+  }
+  @include media-breakpoint-up("md") {
+    width: 320px;
+    height: 320px;
+  }
+}
+.simple-prev-btn {
+}
+.simple-next-btn {
+}
+.product-view-slide {
+}
+.product-card-img {
+}
+.sale-price {
+}
+.price {
+}
+.buttons-wrapper {
+  display: grid;
+  row-gap: 8px;
+}
+.dark-btn {
+}
+.cart-btn {
+}
+.dark-border-btn {
+  padding: 20px 56px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid $basic-color;
+  transition: 0.2s linear;
+
+  &:hover {
+    background-color: $basic-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+.one-click-btn {
+}
+.save-btn {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+  background-color: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+}
+.like-icon {
+  width: 20px;
+  height: 20px;
+  color: #c9c9c9;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: #979797;
+  }
+  &:active {
+    color: #e24b33;
+  }
+}
+.chart-btn {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+  background-color: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+}
+.chart-icon {
+  width: 20px;
+  height: 20px;
+  color: #c9c9c9;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: #979797;
+  }
+  &:active {
+    color: #e24b33;
+  }
+}
+.share-btn {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+  background-color: transparent;
+  border: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+}
+.share-icon {
+  width: 20px;
+  height: 20px;
+  color: #c9c9c9;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: #979797;
+  }
+  &:active {
+    color: #e24b33;
+  }
+}

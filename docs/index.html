@@ -4,28 +4,1015 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css?t=1676527311780">
+  <title>Каталог</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="css/main.css?t=1676919422335">
 </head>
 
 <body>
-  <!-- подключаем шапку -->
-  <header class="header">
-  
+  <div class="container">
+    <header class="header">
+  <div class="header__top">
+    <div class="header__block header__block--left">
+      <form class="location">
+  <div class="__select" data-state="">
+    <svg class="location-icon">
+      <use xlink:href="img/icons/sprite.svg#location"></use>
+    </svg>
+    <div class=" __select__title" data-default="Санкт-Петербург">
+      Санкт-Петербург
+    </div>
+    <div class="__select__content">
+      <input id="theme" class="__select__input" type="radio" name="singleSelect" checked/>
+      <label for="theme" class="__select__label">Санкт-Петербург</label>
+      <input id="themeName" class="__select__input" type="radio" name="singleSelect" />
+      <label for="themeName" class="__select__label">Москва</label>
+      <input id="themeDte" class="__select__input" type="radio" name="singleSelect" />
+      <label for="themeDte" class="__select__label">Нижний Новгород</label>
+      <input id="themeDte" class="__select__input" type="radio" name="singleSelect" />
+      <label for="themeDte" class="__select__label">Ростов-на-Дону</label>
+    </div>
+  </div>
+</form>
+      <a href="tel:88007852535" class="header__call">
+        <svg class="call-icon">
+          <use xlink:href="img/icons/sprite.svg#call"></use>
+        </svg>
+        8 800 785-25-35
+      </a>
+    </div>
+    <div class="header__logo">
+      <svg class="logo">
+        <use xlink:href="img/icons/sprite.svg#logo"></use>
+      </svg>
+    </div>
+    <div class="header__block header__block--right">
+      <div class="sign">
+        <button class="sign__in">Вход</button>
+        <span class="separator"></span>
+        <button class="sign__up">Регистрация</button>
+      </div>
+      <div class="header__links">
+        <a href="#" class="favorite-link">
+          <svg class="favorite-icon">
+            <use xlink:href="img/icons/sprite.svg#favorite"></use>
+          </svg>
+          <div class="favorite__counter">
+            <span class="count">23</span>
+          </div>
+        </a>
+        <a href="#" class="chart-link">
+          <svg class="chart-icon">
+            <use xlink:href="img/icons/sprite.svg#chart"></use>
+          </svg>
+          <div class="chart__counter">
+            <span class="count">2</span>
+          </div>
+        </a>
+        <a href="#" class="cart-link">
+          <svg class="cart-icon">
+            <use xlink:href="img/icons/sprite.svg#bag"></use>
+          </svg>
+          <div class="cart__counter">
+            <span class="count">3</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="header__nav navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            Каталог
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            Акции
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            Бренды
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            Магазины
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            О нас
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            Доставка и оплата
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            Статьи
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__search search">
+      <button class="search__btn">
+        <svg class="search-icon">
+          <use xlink:href="img/icons/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <input type="search" class="search__input" placeholder="Поиск по сайту">
+    </div>
+  </div>
 </header>
 
 
 
-  <!-- подключаем подвал -->
-  <footer>
-    Подвал сайта
-</footer>
+    <!-- include content -->
+    <main class="main-page">
+      <section class="banner section">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide banner__item">
+      <div class="banner__info">
+        <div class="banner__content">
+          <p class="banner__sale">Суперскидка до 60%</p>
+          <p class="banner__product">НА БРИЛЛИАНТЫ</p>
+          <button class="banner__button dark-btn">Подробнее</button>
+        </div>
+      </div>
+      <div class="banner__image">
+        <img data-src="./img/banner_img.png" alt="Изображение" class="banner-img">
+      </div>
+    </div>
+    <div class="swiper-slide banner__item">Slide 2</div>
+    <div class="swiper-slide banner__item">Slide 3</div>
+
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+
+  <div class="button-prev banner-btn-prev">
+  </div>
+  <div class="button-next banner-btn-next">
+  </div>
+
+</section>
+      <section class="sale section">
+  <h2 class="section__title">Распродажа</h2>
+  <div class="sale-tabs js-tabs">
+    <div class="sale-tabs__switchers">
+     <button type="submit" data-tab="rings" class="sale-tabs__btn js-tab-btn">Кольца</button>
+     <button type="submit" data-tab="earrings" class="sale-tabs__btn js-tab-btn">Серьги</button>
+     <button type="submit" data-tab="bracelets" class="sale-tabs__btn js-tab-btn">Браслеты</button>
+     <button type="submit" data-tab="watch" class="sale-tabs__btn js-tab-btn">Часы</button>
+    </div>
+
+    <div class="sale-tabs__controls">
+      <div class="button-prev sale-tabs__button-prev">
+      </div>
+      <div class="button-next sale-tabs__button-next">
+      </div>
+    </div>
+    <div id="rings" class="sale-tabs__content js-tab-content">
+      <div class="sale-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide product">
+      <div class="product__pictos">
+        <div class="sale-picto">Sale</div>
+      </div>
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">41 000 ₽</div>
+        <div class="price">65 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/lot_2.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_2.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_2.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">56 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/lot_3.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_3.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_3.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">37 500 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/lot_4.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_4.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_4.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">39 200 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__picto">Sale</div>
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">41 000 ₽</div>
+        <div class="price">65 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__picto">Sale</div>
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">41 000 ₽</div>
+        <div class="price">65 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+    <div id="earrings" class="sale-tabs__content js-tab-content">
+      <div class="sale-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide product">
+      <div class="product__picto">Sale</div>
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/earrings.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">41 000 ₽</div>
+        <div class="price">65 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/earrings.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_2.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_2.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">56 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/earrings.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_3.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_3.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">37 500 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/earrings.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_4.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_4.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">39 200 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__picto">Sale</div>
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/earrings.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">41 000 ₽</div>
+        <div class="price">65 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+
+    <div class="swiper-slide product">
+      <div class="product__picto">Sale</div>
+      <div class="product__options">
+        <div class="like">
+          <svg class="like-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <div class="view">
+          <svg class="view-icon" style="width: 24px; height: 24px">
+            <use xlink:href="img/icons/sprite.svg#eye"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="product__images">
+        <div class="product-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img data-src="./img/earrings.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+            <div class="swiper-slide">
+              <img data-src="./img/lot_1.png" alt="" class="product-img">
+            </div>
+          </div>
+        </div>
+        <div class="product-pagination"></div>
+      </div>
+      <div class="product__price">
+        <div class="sale-price">41 000 ₽</div>
+        <div class="price">65 000 ₽</div>
+      </div>
+      <div class="product__name">Стильное кольцо из белого золота c бриллиантами</div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div id="bracelets" class="sale-tabs__content js-tab-content">
+      Браслеты
+    </div>
+
+
+    <div id="watch" class="sale-tabs__content js-tab-content">
+      Часы
+    </div>
+  </div>
+
+</section>
+
+      <section class="todays-product section">
+  <h2 class="section__title">Товар дня</h2>
+  <div class="todays-product__controls">
+    <div class="button-prev todays-product__button-prev">
+    </div>
+    <div class="button-next todays-product__button-next">
+    </div>
+  </div>
+  <div class="card-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide product-card">
+        <div class="product-slide__pictos">
+          <div class="new-picto">New</div>
+          <div class="hit-picto">Хит</div>
+          <div class="sale-picto">Sale</div>
+        </div>
+        <div class="product-card__images">
+          <div class="priduct-view-slider">
+            <div class="swiper-wrapper">
+              <div class="simple-prev-btn"></div>
+              <div class="simple-next-btn"></div>
+              <div class="swiper-slide product-view-slide">
+                <img src="./img/card_img.png" alt="Изображение" class="product-card-img">
+              </div>
+              <div class="swiper-slide product-view-slide">
+                <img src="./img/card_img.png" alt="Изображение" class="product-card-img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card__content">
+          <div class="product-card__content--top">
+            <article class="rating">
+  <div class="rating__group">
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star">
+      </button>
+  </div>
+  <div class="rating__value">4.2</div>
+</article>
+            <h3 class="product-card__title">Кольцо из золота с бриллиантами</h3>
+            <p class="product-card__articul">
+              Артикул: <span>1012076</span>
+            </p>
+            <div class="product-card__price">
+              <div class="sale-price">22 000 ₽</div>
+              <div class="price">22 000 ₽</div>
+              <article class="timer timer-1">
+  <div class="timer__items">
+    <div class="timer__item timer__hours">00</div>
+    <div class="timer__item timer__minutes">00</div>
+    <div class="timer__item timer__seconds">00</div>
+  </div>
+</article>
+
+            </div>
+          </div>
+          <div class="product-card__content--bottom">
+            <div class="colors">
+  <h3 class="colors__title">Цвет</h3>
+  <div class="colors__wrapper">
+    <div class="color">
+      <input type="radio" id="white" class="colors__input" name="color">
+      <label for="white" class="colors__label white"></label>
+    </div>
+
+    <div class="color">
+      <input type="radio" id="yellow" class="colors__input" name="color">
+      <label for="yellow" class="colors__label yellow"></label>
+    </div>
+
+    <div class="color">
+      <input type="radio" id="red" class="colors__input" name="color">
+      <label for="red" class="colors__label red"></label>
+    </div>
+
+    <div class="color">
+      <input type="radio" id="green" class="colors__input" name="color">
+      <label for="green" class="colors__label green"></label>
+    </div>
+
+  </div>
+</div>
+
+
+            <div class="sizes">
+  <h3 class="sizes__title">Размер</h3>
+  <div class="sizes__wrapper">
+    <div class="size">
+      <input type="radio" id="size_1" class="size__input" name="size">
+      <label for="size_1" class="size__label">16,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_2" class="size__input" name="size">
+      <label for="size_2" class="size__label">17,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_3" class="size__input" name="size">
+      <label for="size_3" class="size__label">18,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_4" class="size__input" name="size">
+      <label for="size_4" class="size__label">19</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_5" class="size__input" name="size">
+      <label for="size_5" class="size__label">19,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_6" class="size__input" name="size">
+      <label for="size_6" class="size__label">19,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_7" class="size__input" name="size">
+      <label for="size_7" class="size__label">18,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_8" class="size__input" name="size">
+      <label for="size_8" class="size__label">19</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_9" class="size__input" name="size" disabled>
+      <label for="size_9" class="size__label">19,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_10" class="size__input" name="size" disabled>
+      <label for="size_10" class="size__label">19,5</label>
+    </div>
+  </div>
+</div>
+
+
+            <div class="product-card__buttons">
+              <div class="buttons-wrapper">
+                <button class="dark-btn cart-btn">в корзину</button>
+                <button class="dark-border-btn one-click-btn">купить в 1 клик</button>
+              </div>
+              <div class="buttons-wrapper">
+                <button class="save-btn">
+                  <svg class="like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like"></use>
+                  </svg>
+                  Сохранить
+                </button>
+                <button class="chart-btn">
+                  <svg class="chart-icon">
+                    <use xlink:href="img/icons/sprite.svg#chart"></use>
+                  </svg>
+                  Сравнить
+                </button>
+                <button class="share-btn">
+                  <svg class="share-icon">
+                    <use xlink:href="img/icons/sprite.svg#share"></use>
+                  </svg>
+                  Поделиться
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-slide product-card">
+        <div class="product-slide__pictos">
+          <div class="new-picto">New</div>
+          <div class="hit-picto">Хит</div>
+          <div class="sale-picto">Sale</div>
+        </div>
+        <div class="product-card__images">
+          <div class="priduct-view-slider">
+            <div class="swiper-wrapper">
+              <div class="simple-prev-btn"></div>
+              <div class="simple-next-btn"></div>
+              <div class="swiper-slide product-view-slide">
+                <img src="./img/card_img.png" alt="Изображение" class="product-card-img">
+              </div>
+              <div class="swiper-slide product-view-slide">
+                <img src="./img/card_img.png" alt="Изображение" class="product-card-img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card__content">
+          <div class="product-card__content--top">
+            <article class="rating">
+  <div class="rating__group">
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star _checked">
+      </button>
+      <button class="rating__star">
+      </button>
+  </div>
+  <div class="rating__value">4.2</div>
+</article>
+            <h3 class="product-card__title">Кольцо из золота с бриллиантами</h3>
+            <p class="product-card__articul">
+              Артикул: <span>1012076</span>
+            </p>
+            <div class="product-card__price">
+              <div class="sale-price">22 000 ₽</div>
+              <div class="price">22 000 ₽</div>
+              <article class="timer timer-1">
+  <div class="timer__items">
+    <div class="timer__item timer__hours">00</div>
+    <div class="timer__item timer__minutes">00</div>
+    <div class="timer__item timer__seconds">00</div>
+  </div>
+</article>
+
+            </div>
+          </div>
+          <div class="product-card__content--bottom">
+            <div class="colors">
+  <h3 class="colors__title">Цвет</h3>
+  <div class="colors__wrapper">
+    <div class="color">
+      <input type="radio" id="white" class="colors__input" name="color">
+      <label for="white" class="colors__label white"></label>
+    </div>
+
+    <div class="color">
+      <input type="radio" id="yellow" class="colors__input" name="color">
+      <label for="yellow" class="colors__label yellow"></label>
+    </div>
+
+    <div class="color">
+      <input type="radio" id="red" class="colors__input" name="color">
+      <label for="red" class="colors__label red"></label>
+    </div>
+
+    <div class="color">
+      <input type="radio" id="green" class="colors__input" name="color">
+      <label for="green" class="colors__label green"></label>
+    </div>
+
+  </div>
+</div>
+
+
+            <div class="sizes">
+  <h3 class="sizes__title">Размер</h3>
+  <div class="sizes__wrapper">
+    <div class="size">
+      <input type="radio" id="size_1" class="size__input" name="size">
+      <label for="size_1" class="size__label">16,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_2" class="size__input" name="size">
+      <label for="size_2" class="size__label">17,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_3" class="size__input" name="size">
+      <label for="size_3" class="size__label">18,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_4" class="size__input" name="size">
+      <label for="size_4" class="size__label">19</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_5" class="size__input" name="size">
+      <label for="size_5" class="size__label">19,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_6" class="size__input" name="size">
+      <label for="size_6" class="size__label">19,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_7" class="size__input" name="size">
+      <label for="size_7" class="size__label">18,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_8" class="size__input" name="size">
+      <label for="size_8" class="size__label">19</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_9" class="size__input" name="size" disabled>
+      <label for="size_9" class="size__label">19,5</label>
+    </div>
+
+    <div class="size">
+      <input type="radio" id="size_10" class="size__input" name="size" disabled>
+      <label for="size_10" class="size__label">19,5</label>
+    </div>
+  </div>
+</div>
+
+
+            <div class="product-card__buttons">
+              <div class="buttons-wrapper">
+                <button class="dark-btn cart-btn">в корзину</button>
+                <button class="dark-border-btn one-click-btn">купить в 1 клик</button>
+              </div>
+              <div class="buttons-wrapper">
+                <button class="save-btn">
+                  <svg class="like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like"></use>
+                  </svg>
+                  Сохранить
+                </button>
+                <button class="chart-btn">
+                  <svg class="chart-icon">
+                    <use xlink:href="img/icons/sprite.svg#chart"></use>
+                  </svg>
+                  Сравнить
+                </button>
+                <button class="share-btn">
+                  <svg class="share-icon">
+                    <use xlink:href="img/icons/sprite.svg#share"></use>
+                  </svg>
+                  Поделиться
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    
+
+  </div>
 
   <!-- подключаем js -->
-  <script src="js/main.js?t=1676527311780"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js?t=1676919422335"></script>
 </body>
 
 </html>
-  <svg>
-    <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
-  </svg>

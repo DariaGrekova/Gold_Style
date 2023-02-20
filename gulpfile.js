@@ -3,6 +3,7 @@ const del = require('del');
 const sass = require('gulp-dart-sass');
 // const uglify = require('gulp-uglify-es').default;
 // const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 const include = require('gulp-file-include');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
@@ -52,6 +53,10 @@ function scss() {
   return src(sourceFolder + '/scss/main.scss')
     .pipe(sass())
     //.pipe(cleanCSS({level: 2}))
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 3 versions'],
+      cascade: false
+    }))
     .pipe(dest(buildFolder + '/css'))
     .pipe(sass().on('error', sass.logError))
 };

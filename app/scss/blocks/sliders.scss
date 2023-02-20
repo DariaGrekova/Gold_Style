@@ -1,0 +1,66 @@
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border: 1px solid $basic-color;
+  opacity: 1;
+  transition: 0.2s linear;
+}
+.swiper-pagination-bullet-active {
+  background-color: $basic-color;
+}
+.button-prev {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid $basic-color;
+  z-index: 1;
+  background-image: url("../img/icons/arrow-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-180deg);
+  transition: 0.1s linear;
+
+  &:hover {
+    background-color: $item-bg;
+  }
+
+  &:active {
+    background-position: 27px center;
+  }
+
+  &[aria-disabled="true"] {
+    opacity: 0.3;
+    background-position: center;
+  }
+}
+.button-next {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid $basic-color;
+  z-index: 1;
+  background-image: url("../img/icons/arrow-btn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.1s linear;
+
+  &:hover {
+    background-color: $item-bg;
+  }
+
+  &:active {
+    background-position: 27px center;
+  }
+
+  &[aria-disabled="true"] {
+    opacity: 0.3;
+    background-position: center;
+  }
+}

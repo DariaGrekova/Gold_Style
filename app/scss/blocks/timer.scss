@@ -1,0 +1,51 @@
+.timer {
+  background: #f5f5f5;
+  display: inline-block;
+  padding: 12px 14px;
+  &__items {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  &__item {
+    position: relative;
+    min-width: 60px;
+    padding: 5px 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+  }
+
+  &__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 100%;
+  }
+
+  &__item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -15px;
+    top: 25%;
+  }
+
+  &__result {
+    text-align: center;
+    padding: 10px;
+    color: #9c27b0;
+    font-weight: bold;
+  }
+}
+hr {
+  border-color: #fafafa;
+  border-style: solid;
+}

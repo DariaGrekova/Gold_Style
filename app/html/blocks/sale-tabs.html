@@ -1,0 +1,37 @@
+<section class="sale section">
+  <h2 class="section__title">Распродажа</h2>
+  <div class="sale-tabs js-tabs">
+    <div class="sale-tabs__switchers">
+     <button type="submit" data-tab="rings" class="sale-tabs__btn js-tab-btn">Кольца</button>
+     <button type="submit" data-tab="earrings" class="sale-tabs__btn js-tab-btn">Серьги</button>
+     <button type="submit" data-tab="bracelets" class="sale-tabs__btn js-tab-btn">Браслеты</button>
+     <button type="submit" data-tab="watch" class="sale-tabs__btn js-tab-btn">Часы</button>
+    </div>
+
+    <div class="sale-tabs__controls">
+      <div class="button-prev sale-tabs__button-prev">
+      </div>
+      <div class="button-next sale-tabs__button-next">
+      </div>
+    </div>
+    <div id="rings" class="sale-tabs__content js-tab-content">
+      @@include('rings-slider.html')
+    </div>
+
+
+    <div id="earrings" class="sale-tabs__content js-tab-content">
+      @@include('earrings-slider.html')
+
+    </div>
+
+    <div id="bracelets" class="sale-tabs__content js-tab-content">
+      Браслеты
+    </div>
+
+
+    <div id="watch" class="sale-tabs__content js-tab-content">
+      Часы
+    </div>
+  </div>
+
+</section>
