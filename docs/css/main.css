@@ -472,11 +472,23 @@ a {
   background-color: transparent;
   border: none;
 }
+.sign__in:hover {
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0.5;
+}
 .sign__up {
   font-size: 14px;
   line-height: 100%;
   background-color: transparent;
   border: none;
+}
+.sign__up:hover {
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0.5;
 }
 
 .separator {
@@ -692,6 +704,12 @@ a {
   line-height: 100%;
   color: #303030;
   text-transform: uppercase;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.navigation__link:hover {
+  opacity: 0.5;
 }
 @media (max-width: 1086px) {
   .navigation__link {
@@ -1195,6 +1213,9 @@ a {
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
+.sale-tabs__btn:hover {
+  background: #dddddd;
+}
 .sale-tabs__btn._active {
   color: #ffffff;
   background: #303030;
@@ -1554,6 +1575,18 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 100%;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.save-btn:hover span {
+  opacity: 0.5;
+}
+.save-btn:hover .like-icon {
+  color: #979797;
+}
+.save-btn:active .like-icon {
+  color: #e24b33;
 }
 
 .like-icon {

@@ -1,4 +1,5 @@
 export function timer() {
+
   class CountdownTimer {
     constructor(deadline, cbChange, cbComplete) {
       this._deadline = deadline;
@@ -52,6 +53,21 @@ export function timer() {
       elSeconds1.dataset.title = timer.secondsTitle;
     }, () => {
       document.querySelector('.timer-1 .timer__result').textContent = 'Таймер завершился!';
+    });
+
+    const elHours2 = document.querySelector('.timer-2 .timer__hours');
+    const elMinutes2 = document.querySelector('.timer-2 .timer__minutes');
+    const elSeconds2 = document.querySelector('.timer-2 .timer__seconds');
+     const deadline2 = new Date(Date.parse(new Date()) + 1 * 13 * 60 * 60 * 1000)
+    new CountdownTimer(deadline2, (timer) => {
+      elHours2.textContent = timer.hours;
+      elMinutes2.textContent = timer.minutes;
+      elSeconds2.textContent = timer.seconds;
+      elHours2.dataset.title = timer.hoursTitle;
+      elMinutes2.dataset.title = timer.minutesTitle;
+      elSeconds2.dataset.title = timer.secondsTitle;
+    }, () => {
+      document.querySelector('.timer-2 .timer__result').textContent = 'Таймер завершился!';
     });
   });
 }

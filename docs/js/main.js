@@ -218,19 +218,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "rating": () => (/* binding */ rating)
 /* harmony export */ });
 function rating() {
-  const rating = document.querySelector('.rating');
-  if (rating) {
-    const stars = rating.querySelectorAll('.rating__star');
-    stars.forEach((star, i) => {
-      star.addEventListener('click', e => {
-        e.preventDefault();
-        let currentStarLevel = i + 1;
-        stars.forEach((star, j) => {
-          if (currentStarLevel >= j + 1) {
-            star.classList.add('_checked');
-          } else {
-            star.classList.remove('_checked');
-          }
+  const rating = document.querySelectorAll('.rating');
+  if (rating.length > 0) {
+    rating.forEach(item => {
+      const stars = item.querySelectorAll('.rating__star');
+      stars.forEach((star, i) => {
+        star.addEventListener('click', e => {
+          e.preventDefault();
+          let currentStarLevel = i + 1;
+          stars.forEach((star, j) => {
+            if (currentStarLevel >= j + 1) {
+              star.classList.add('_checked');
+            } else {
+              star.classList.remove('_checked');
+            }
+          });
         });
       });
     });
@@ -301,6 +303,20 @@ function timer() {
       elSeconds1.dataset.title = timer.secondsTitle;
     }, () => {
       document.querySelector('.timer-1 .timer__result').textContent = 'Таймер завершился!';
+    });
+    const elHours2 = document.querySelector('.timer-2 .timer__hours');
+    const elMinutes2 = document.querySelector('.timer-2 .timer__minutes');
+    const elSeconds2 = document.querySelector('.timer-2 .timer__seconds');
+    const deadline2 = new Date(Date.parse(new Date()) + 1 * 13 * 60 * 60 * 1000);
+    new CountdownTimer(deadline2, timer => {
+      elHours2.textContent = timer.hours;
+      elMinutes2.textContent = timer.minutes;
+      elSeconds2.textContent = timer.seconds;
+      elHours2.dataset.title = timer.hoursTitle;
+      elMinutes2.dataset.title = timer.minutesTitle;
+      elSeconds2.dataset.title = timer.secondsTitle;
+    }, () => {
+      document.querySelector('.timer-2 .timer__result').textContent = 'Таймер завершился!';
     });
   });
 }

@@ -1,22 +1,25 @@
 export function rating() {
-  const rating =  document.querySelector('.rating');
+  const rating =  document.querySelectorAll('.rating');
 
-  if(rating) {
-    const stars = rating.querySelectorAll('.rating__star');
+  if(rating.length > 0) {
 
-    stars.forEach((star, i) => {
-      star.addEventListener('click', (e) => {
-        e.preventDefault();
+    rating.forEach((item) => {
+      const stars = item.querySelectorAll('.rating__star');
 
-        let currentStarLevel = i + 1;
+      stars.forEach((star, i) => {
+        star.addEventListener('click', (e) => {
+          e.preventDefault();
 
-        stars.forEach((star, j) => {
-          if (currentStarLevel >= j + 1) {
-            star.classList.add('_checked');
-          } else {
-            star.classList.remove('_checked');
-          }
+          let currentStarLevel = i + 1;
 
+          stars.forEach((star, j) => {
+            if (currentStarLevel >= j + 1) {
+              star.classList.add('_checked');
+            } else {
+              star.classList.remove('_checked');
+            }
+
+          })
         })
       })
     })

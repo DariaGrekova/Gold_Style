@@ -219,6 +219,19 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 100%;
+  transition: 0.2s linear;
+
+  &:hover span {
+    opacity: 0.5;
+  }
+
+  &:hover .like-icon {
+    color: #979797;
+  }
+
+  &:active .like-icon {
+    color: #e24b33;
+  }
 }
 .like-icon {
   width: 20px;
