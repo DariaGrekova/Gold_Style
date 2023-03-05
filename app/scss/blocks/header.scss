@@ -42,6 +42,7 @@
 .header {
   background-color: $body-bg;
   margin-bottom: 20px;
+  transition: 0.2s;
 
   @include media-breakpoint-up("l") {
     position: sticky;
@@ -55,6 +56,17 @@
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     padding: 24px 0;
+    transition: 0.2s;
+  }
+
+  &.fixed {
+    margin-bottom: 0;
+    padding-bottom: 12px;
+    box-shadow: 0 5px 10px #dadada;
+
+    .header__top {
+      padding: 12px 0;
+    }
   }
 
   // .header__block-wrapper

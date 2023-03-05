@@ -10,4 +10,14 @@ export function burgerMenu() {
     document.body.style.overflow = menu.classList.contains('_active') ? 'hidden' : '';
   })
 
+  const header = document.querySelector('.header');
+  if(window.innerWidth < 1056) {
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset > 0) {
+        header.classList.add('fixed');
+      } else {
+        header.classList.remove('fixed');
+      }
+    })
+  }
 }

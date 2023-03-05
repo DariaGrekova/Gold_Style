@@ -324,6 +324,9 @@ a {
 .header {
   background-color: #ffffff;
   margin-bottom: 20px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 @media (max-width: 1086px) {
   .header {
@@ -339,6 +342,18 @@ a {
   -ms-flex-align: center;
   align-items: center;
   padding: 24px 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.header.fixed {
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  -webkit-box-shadow: 0 5px 10px #dadada;
+  box-shadow: 0 5px 10px #dadada;
+}
+.header.fixed .header__top {
+  padding: 12px 0;
 }
 .header__block {
   display: -webkit-box;
