@@ -13,13 +13,15 @@
 </head>
 
 <body>
-  <div class="container">
-    @@include('blocks/header.html')
+  @@include('blocks/header.html')
 
+  <div class="container">
     <!-- include content -->
     <main class="main-page">
       @@include('blocks/banner.html')
+      @@include('blocks/popular-categories.html')
       @@include('blocks/sale-tabs.html')
+      @@include('blocks/sales.html')
       @@include('blocks/todays-product.html')
 
     </main>

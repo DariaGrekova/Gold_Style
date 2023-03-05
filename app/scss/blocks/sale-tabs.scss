@@ -41,6 +41,10 @@
       color: #ffffff;
       background: $basic-color;
     }
+
+    @include media-breakpoint-up("s") {
+      padding: 12px 15px;
+    }
   }
 
   // .sale-tabs__content

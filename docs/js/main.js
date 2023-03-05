@@ -93,6 +93,19 @@ function sliders() {
     }
   });
 
+  // categories
+
+  const categoriesSliders = document.querySelectorAll('.category-slider');
+  if (categoriesSliders.length > 0) {
+    categoriesSliders.forEach(slider => {
+      const categorysSlider = new Swiper(slider, {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        simulateTouch: false
+      });
+    });
+  }
+
   // inside tabs
   const saleSliders = document.querySelectorAll('.sale-slider');
   if (saleSliders.length > 0) {

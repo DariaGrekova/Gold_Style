@@ -439,6 +439,11 @@ a {
     padding: 20px 30px;
   }
 }
+@media (max-width: 690px) {
+  .header__bottom {
+    padding: 10px 20px;
+  }
+}
 .header__nav {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -451,6 +456,12 @@ a {
 .logo {
   width: 183px;
   height: 52px;
+}
+@media (max-width: 690px) {
+  .logo {
+    width: 146.4px;
+    height: 41.6px;
+  }
 }
 
 .sign {
@@ -745,6 +756,7 @@ a {
   background-color: #f8f8f8;
   border: none;
   outline: none;
+  width: 100%;
 }
 .search__input::-webkit-input-placeholder {
   font-size: 14px;
@@ -1084,6 +1096,8 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, -webkit-max-content);
     grid-template-rows: repeat(2, max-content);
+    row-gap: 40px;
+    padding: 12px;
   }
 }
 .banner__info {
@@ -1102,7 +1116,12 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 690px) {
+  .banner__content {
+    display: grid;
   }
 }
 .banner__sale {
@@ -1110,6 +1129,11 @@ a {
   font-size: 20px;
   line-height: 100%;
   margin-bottom: 30px;
+}
+@media (max-width: 690px) {
+  .banner__sale {
+    margin-bottom: 15px;
+  }
 }
 .banner__product {
   font-family: "Prata", "Arial", "Helvetica", sans-serif;
@@ -1128,6 +1152,23 @@ a {
     margin-bottom: 25px;
   }
 }
+@media (max-width: 690px) {
+  .banner__product {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 690px) {
+  .banner__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 215px;
+  }
+}
+
 .dark-btn {
   font-weight: 500;
   font-size: 14px;
@@ -1171,6 +1212,40 @@ a {
   bottom: 0;
   margin: auto;
   right: 24px;
+}
+
+.popular-categories__category {
+  display: grid;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  background-color: #f8f8f8;
+  padding: 25px;
+  width: 200px;
+  height: 260px;
+}
+
+.category__name {
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #303030;
+}
+.category__img {
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.category-slider {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
 }
 
 .sale {
@@ -1219,6 +1294,11 @@ a {
 .sale-tabs__btn._active {
   color: #ffffff;
   background: #303030;
+}
+@media (max-width: 690px) {
+  .sale-tabs__btn {
+    padding: 12px 15px;
+  }
 }
 .sale-tabs__content {
   position: absolute;

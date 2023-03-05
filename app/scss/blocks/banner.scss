@@ -34,6 +34,8 @@
     @include media-breakpoint-up("s") {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
+      row-gap: 40px;
+      padding: 12px;
     }
   }
 
@@ -44,13 +46,16 @@
 
     @include media-breakpoint-up("s") {
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 25px;
     }
   }
 
   // .banner__content
 
   &__content {
+    @include media-breakpoint-up("s") {
+      display: grid;
+    }
   }
 
   // .banner__sale
@@ -60,6 +65,10 @@
     font-size: 20px;
     line-height: 100%;
     margin-bottom: 30px;
+
+    @include media-breakpoint-up("s") {
+      margin-bottom: 15px;
+    }
   }
 
   // .banner__product
@@ -78,6 +87,10 @@
       font-size: 28px;
       margin-bottom: 25px;
     }
+
+    @include media-breakpoint-up("s") {
+      margin-bottom: 15px;
+    }
   }
 
   // .banner__button
@@ -88,6 +101,11 @@
   // .banner__image
 
   &__image {
+    @include media-breakpoint-up("s") {
+      display: flex;
+      justify-content: center;
+      min-height: 215px;
+    }
   }
 }
 
